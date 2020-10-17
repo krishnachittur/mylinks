@@ -1,0 +1,6 @@
+name = "mylinks"
+type = "webpack"
+account_id = "6210d26b12f55700880f05a95e6b65d2"
+workers_dev = true
+route = ""
+zone_id = ""
