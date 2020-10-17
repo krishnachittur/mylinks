@@ -83,11 +83,15 @@ class Router {
         return this.handle([], handler)
     }
 
-    route(req) {
+    route(req, _default) {
         const route = this.resolve(req)
 
         if (route) {
             return route.handler(req)
+        }
+
+        if (_default) {
+            return _default(req)
         }
 
         return new Response('resource not found', {
